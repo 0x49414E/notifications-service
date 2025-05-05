@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-notificacions_service-2aee7b5d-116b-4a34-a6e8-780fd3e63fe1</UserSecretsId>
+    <RootNamespace>notificacions_service</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Confluent.Kafka" Version="2.3.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.17" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Consumers\" />
+    <None Remove="Dispatchers\" />
+    <None Remove="Services\" />
+    <None Remove="Utilities\" />
+    <None Remove="Utilities\Templates\" />
+    <None Remove="Models\Configs\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Models\Messages\" />
+    <None Remove="Handlers\" />
+    <None Remove="Interfaces\Services\" />
+    <None Remove="Models\Emails\" />
+    <None Remove="Data\" />
+    <None Remove="Models\Entities\" />
+    <None Remove="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Consumers\" />
+    <Folder Include="Dispatchers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Utilities\Templates\" />
+    <Folder Include="Models\Configs\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\Messages\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Models\Emails\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+</Project>
